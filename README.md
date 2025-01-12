@@ -31,13 +31,13 @@ This is a React-based web application for browsing, voting, and managing memes. 
 1. Clone the repository:
    git clone https://github.com/Na7ali4/Projekt-zaliczeniowy-React-.git
 
-# Navigate to the project directory: 
+2. Navigate to the project directory: 
 cd meme-service
 
-# Install dependencies:
+3. Install dependencies:
 npm install
 
-# Start the development server:
+4. Start the development server:
 npm start
 
 Open the app in your browser at http://localhost:3000.
