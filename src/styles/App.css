@@ -1,0 +1,145 @@
+/* Globalne style */
+body {
+  background-color: #121212; /* Tło aplikacji */
+  color: #ffffff; /* Kolor tekstu */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff; /* Linki w białym kolorze */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Nawigacja */
+nav {
+  background-color: #1e1e1e; /* Ciemnoszare tło nawigacji */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #b0b0b0; /* Lekko szary na hover */
+}
+
+/* Tytuł strony */
+.page-title {
+  text-align: center;
+  font-size: 24px;
+  margin: 80px 0 20px; /* Przesunięcie poniżej nawigacji */
+}
+
+/* Przyciski */
+button {
+  background-color: #1e1e1e; /* Ciemnoszare tło */
+  color: #ffffff; /* Biały tekst */
+  border: 1px solid #333333; /* Jasnoszare obramowanie */
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #2e2e2e; /* Lekkie rozjaśnienie na hover */
+}
+
+button:active {
+  background-color: #444444; /* Aktywny przycisk */
+}
+
+/* Obrazki memów */
+.meme {
+  background-color: #1e1e1e; /* Ciemne tło dla każdego mema */
+  border: 1px solid #333333; /* Obramowanie */
+  border-radius: 10px;
+  margin: 20px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Lekki cień */
+}
+
+.meme img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Liczniki głosów */
+.vote-count {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Przyciski specyficzne */
+.upvote-button {
+  background-color: #28a745; /* Zielony */
+}
+
+.upvote-button:hover {
+  background-color: #218838; /* Ciemniejszy zielony */
+}
+
+.downvote-button {
+  background-color: #dc3545; /* Czerwony */
+}
+
+.downvote-button:hover {
+  background-color: #c82333; /* Ciemniejszy czerwony */
+}
+
+.star-button {
+  background-color: #ffc107; /* Złoty */
+  color: black;
+}
+
+.star-button:hover {
+  background-color: #e0a800; /* Ciemniejszy złoty */
+}
+
+/* Lista memów */
+.meme-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Formularz dodawania memów */
+form {
+  background-color: #1e1e1e; /* Ciemne tło */
+  border: 1px solid #333333;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+form input,
+form button {
+  width: 100%;
+  margin-bottom: 15px;
+}

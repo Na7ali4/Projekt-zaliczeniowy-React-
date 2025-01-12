@@ -1,0 +1,100 @@
+.meme-list {
+  display: flex;
+  flex-direction: column; /* Układ pionowy */
+  align-items: center; /* Wyśrodkowanie memów */
+  gap: 20px; /* Odstępy między memami */
+  padding: 20px;
+}
+
+.meme {
+  width: 80%; /* Mem zajmuje 80% szerokości kontenera */
+  max-width: 600px; /* Maksymalna szerokość mema */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.meme img {
+  max-width: 100%; /* Dopasowanie obrazka do kontenera */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.meme h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.meme button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.meme button:hover {
+  background-color: #0056b3;
+}
+
+.meme-buttons {
+  display: flex;
+  gap: 10px; /* Odstęp między przyciskami */
+  justify-content: center; /* Wyśrodkowanie przycisków */
+}
+
+.meme-buttons button {
+  display: flex;
+  align-items: center; /* Wyrównanie ikony i liczby */
+  gap: 5px; /* Odstęp między ikoną a liczbą */
+  border: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.meme-buttons button:hover {
+  opacity: 0.9; /* Lekki efekt po najechaniu */
+}
+
+.meme-buttons button:active {
+  transform: scale(0.95); /* Efekt wciśnięcia */
+}
+
+.meme-buttons .upvote-button {
+  background-color: #28a745; /* Zielony */
+}
+
+.meme-buttons .upvote-button:hover {
+  background-color: #218838; /* Ciemniejszy zielony na hover */
+}
+
+.meme-buttons .downvote-button {
+  background-color: #dc3545; /* Czerwony */
+}
+
+.meme-buttons .downvote-button:hover {
+  background-color: #c82333; /* Ciemniejszy czerwony na hover */
+}
+
+.meme-buttons .star-button {
+  background-color: #ffc107; /* Złoty/żółty */
+  color: black; /* Czarny kolor tekstu/ikony */
+}
+
+.meme-buttons .star-button:hover {
+  background-color: #e0a800; /* Ciemniejszy złoty na hover */
+}
+
+.vote-count {
+  font-size: 16px; /* Rozmiar czcionki liczby */
+  color: white;
+}
