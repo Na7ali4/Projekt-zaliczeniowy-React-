@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link, Navigate } from "react-router-dom";
 import { memeData } from "./utils/memeData";
 import Hot from "./pages/Hot";
 import Regular from "./pages/Regular";
@@ -91,6 +91,11 @@ const App = () => {
           />
 
           <Route path="/add" element={<AddMeme onAddMeme={handleAddMeme} />} />
+          <Route path="/" element={<Navigate to="/regular" />} />
+          <Route path="/hot" element={<Hot />} />
+          <Route path="/regular" element={<Regular />} />
+          <Route path="/starred" element={<Starred />} />
+          <Route path="/add" element={<AddMeme />} />
         </Routes>
       </div>
     </Router>
