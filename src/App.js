@@ -13,6 +13,8 @@ import Regular from "./pages/Regular";
 import AddMeme from "./pages/AddMeme";
 import Starred from "./pages/Starred";
 import "./styles/App.css";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function Breadcrumbs() {
   const location = useLocation();
@@ -68,6 +70,7 @@ const App = () => {
   };
   return (
     <Router>
+      <ScrollToTop /> 
       <div className="app">
         <nav>
           <div className="nav-container">
