@@ -5,7 +5,7 @@ import {
   Routes,
   NavLink,
   Navigate,
-  useLocation
+  useLocation,
 } from "react-router-dom";
 import { memeData } from "./utils/memeData";
 import Hot from "./pages/Hot";
@@ -55,12 +55,10 @@ const App = () => {
     );
   };
 
-  const handleStar = (memeToStar) => {
+  const handleStar = (memeId) => {
     setMemes((prevMemes) =>
       prevMemes.map((meme) =>
-        meme.title === memeToStar.title
-          ? { ...meme, starred: !meme.starred }
-          : meme
+        meme.id === memeId ? { ...meme, starred: !meme.starred } : meme
       )
     );
   };
@@ -147,7 +145,6 @@ const App = () => {
           <Route path="/hot" element={<Hot />} />
           <Route path="/regular" element={<Regular />} />
           <Route path="/starred" element={<Starred />} />
-          <Route path="/add" element={<AddMeme />} />
         </Routes>
       </div>
     </Router>

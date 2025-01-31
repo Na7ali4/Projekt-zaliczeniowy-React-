@@ -1,5 +1,6 @@
 export const memeData = [
   {
+    id: "1",
     title: "Mem 1",
     upvotes: 0,
     downvotes: 0,
@@ -7,6 +8,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "2",
     title: "Mem 2",
     upvotes: 1,
     downvotes: 2,
@@ -15,6 +17,7 @@ export const memeData = [
   },
 
   {
+    id: "3",
     title: "Mem 3",
     upvotes: 10,
     downvotes: 2,
@@ -22,6 +25,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "4",
     title: "Mem 4",
     upvotes: 3,
     downvotes: 1,
@@ -29,6 +33,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "5",
     title: "Mem 5",
     upvotes: 5,
     downvotes: 2,
@@ -36,6 +41,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "6",
     title: "Mem 6",
     upvotes: 6,
     downvotes: 2,
@@ -43,6 +49,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "7",
     title: "Mem 7",
     upvotes: 1,
     downvotes: 0,
@@ -50,6 +57,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "8",
     title: "Mem 8",
     upvotes: 1,
     downvotes: 0,
@@ -57,6 +65,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "9",
     title: "Mem 9",
     upvotes: 100,
     downvotes: 1,
@@ -64,6 +73,7 @@ export const memeData = [
     starred: true,
   },
   {
+    id: "10",
     title: "Mem 10",
     upvotes: 1,
     downvotes: 0,
@@ -71,6 +81,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "11",
     title: "Mem 11",
     upvotes: 1,
     downvotes: 0,
@@ -78,13 +89,14 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "12",
     title: "Mem 12",
     upvotes: 1,
     downvotes: 0,
     img: "images/image12.jpg",
     starred: false,
   },
-  {
+  {id: "13",
     title: "Mem 13",
     upvotes: 1,
     downvotes: 0,
@@ -92,6 +104,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "14",
     title: "Mem 14",
     upvotes: 50,
     downvotes: 40,
@@ -99,6 +112,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "15",
     title: "Mem 15",
     upvotes: 1,
     downvotes: 0,
@@ -106,6 +120,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "16",
     title: "Mem 16",
     upvotes: 1,
     downvotes: 0,
@@ -113,6 +128,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "17",
     title: "Mem 17",
     upvotes: 1,
     downvotes: 0,
@@ -120,6 +136,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "18",
     title: "Mem 18",
     upvotes: 1,
     downvotes: 0,
@@ -127,6 +144,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "19",
     title: "Mem 19",
     upvotes: 1,
     downvotes: 0,
@@ -134,6 +152,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "20",
     title: "Mem 20",
     upvotes: 1,
     downvotes: 0,
@@ -141,6 +160,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "21",
     title: "Mem 21",
     upvotes: 1,
     downvotes: 0,
@@ -148,6 +168,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "22",
     title: "Mem 22",
     upvotes: 1,
     downvotes: 0,
@@ -155,6 +176,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "23",
     title: "Mem 23",
     upvotes: 1,
     downvotes: 0,
@@ -162,6 +184,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "24",
     title: "Mem 24",
     upvotes: 1,
     downvotes: 0,
@@ -169,6 +192,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "25",
     title: "Mem 25",
     upvotes: 1,
     downvotes: 0,
@@ -176,6 +200,7 @@ export const memeData = [
     starred: true,
   },
   {
+    id: "26",
     title: "Mem 26",
     upvotes: 1,
     downvotes: 0,
@@ -183,6 +208,7 @@ export const memeData = [
     starred: false,
   },
   {
+    id: "27",
     title: "Mem 27",
     upvotes: 33,
     downvotes: 0,

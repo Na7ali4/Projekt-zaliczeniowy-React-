@@ -6,7 +6,7 @@ const MemeList = ({ memes, onUpvote, onDownvote, onStar }) => {
     <div className="meme-list">
       {memes.map((meme) => (
         <Meme
-          key={meme.title}
+          key={meme.id}
           meme={meme}
           onUpvote={onUpvote}
           onDownvote={onDownvote}

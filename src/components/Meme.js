@@ -20,7 +20,7 @@ const Meme = ({ meme, onUpvote, onDownvote, onStar }) => {
           <FontAwesomeIcon icon={faThumbsDown} />
           <span className="vote-count">{meme.downvotes}</span>
         </button>
-        <button className="star-button" onClick={() => onStar(meme)}>
+        <button className="star-button" onClick={() => onStar(meme.id)}>
           <FontAwesomeIcon
             icon={faStar}
             style={{ color: meme.starred ? "gold" : "gray" }}
