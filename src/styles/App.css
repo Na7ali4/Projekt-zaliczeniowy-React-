@@ -36,9 +36,16 @@ nav {
 }
 
 nav a {
-  margin: 0 10px;
+  text-decoration: none;
+  padding: 10px 15px;
   font-size: 16px;
-  color: #ffffff;
+  color: white;
+  transition: 0.3s;
+}
+nav a.active {
+  font-weight: bold;
+  background-color: #333333; /* Wyróżnienie aktywnej strony */
+  border-radius: 5px;
 }
 
 nav a:hover {
@@ -142,4 +149,22 @@ form input,
 form button {
   width: 100%;
   margin-bottom: 15px;
+}
+
+/* Styl breadcrumbs */
+.breadcrumbs {
+  margin-top: 70px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: white;
+}
+
+.breadcrumbs a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
 }

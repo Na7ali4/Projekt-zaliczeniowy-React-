@@ -1,11 +1,40 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes, Link, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  NavLink,
+  Navigate,
+  useLocation
+} from "react-router-dom";
 import { memeData } from "./utils/memeData";
 import Hot from "./pages/Hot";
 import Regular from "./pages/Regular";
 import AddMeme from "./pages/AddMeme";
 import Starred from "./pages/Starred";
 import "./styles/App.css";
+
+function Breadcrumbs() {
+  const location = useLocation();
+  const pathnames = location.pathname.split("/").filter((x) => x);
+
+  return (
+    <div className="breadcrumbs">
+      <NavLink to="/">Home</NavLink>
+      {pathnames.map((value, index) => {
+        const to = `/${pathnames.slice(0, index + 1).join("/")}`;
+        return (
+          <span key={to}>
+            {" > "}
+            <NavLink to={to}>
+              {value.charAt(0).toUpperCase() + value.slice(1)}
+            </NavLink>
+          </span>
+        );
+      })}
+    </div>
+  );
+}
 
 const App = () => {
   const [memes, setMemes] = useState(memeData);
@@ -45,15 +74,38 @@ const App = () => {
         <nav>
           <div className="nav-container">
             <div className="left-links">
-              <Link to="/hot">Hot</Link>
-              <Link to="/regular">Regular</Link>
-              <Link to="/starred">Starred</Link>
+              <NavLink
+                to="/hot"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Hot
+              </NavLink>
+              <NavLink
+                to="/regular"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Regular
+              </NavLink>
+              <NavLink
+                to="/starred"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Starred
+              </NavLink>
             </div>
             <div className="right-link">
-              <Link to="/add"> + Add Meme</Link>
+              <NavLink
+                to="/add"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                <span className="add-icon">+</span> Add Meme
+              </NavLink>
             </div>
           </div>
         </nav>
+
+        {/* Breadcrumbs */}
+        <Breadcrumbs />
 
         <Routes>
           <Route
